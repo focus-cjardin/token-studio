@@ -1,0 +1,613 @@
+{
+    "spacing": {
+        "1x": {
+            "value": "{dimension.2}",
+            "type": "spacing"
+        },
+        "2x": {
+            "value": "{dimension.4}",
+            "type": "spacing"
+        },
+        "4x": {
+            "value": "{dimension.8}",
+            "type": "spacing"
+        },
+        "6x": {
+            "value": "{dimension.12}",
+            "type": "spacing"
+        },
+        "7x": {
+            "value": "{dimension.14}",
+            "type": "spacing"
+        },
+        "8x": {
+            "value": "{dimension.16}",
+            "type": "spacing"
+        },
+        "9x": {
+            "value": "{dimension.18}",
+            "type": "spacing"
+        },
+        "10x": {
+            "value": "{dimension.20}",
+            "type": "spacing"
+        },
+        "12x": {
+            "value": "{dimension.24}",
+            "type": "spacing"
+        },
+        "16x": {
+            "value": "{dimension.32}",
+            "type": "spacing"
+        },
+        "18x": {
+            "value": "{dimension.36}",
+            "type": "spacing"
+        },
+        "20x": {
+            "value": "{dimension.40}",
+            "type": "spacing"
+        },
+        "24x": {
+            "value": "{dimension.48}",
+            "type": "spacing"
+        },
+        "28x": {
+            "value": "{dimension.56}",
+            "type": "spacing"
+        },
+        "32x": {
+            "value": "{dimension.64}",
+            "type": "spacing"
+        },
+        "36x": {
+            "value": "{dimension.72}",
+            "type": "spacing"
+        },
+        "48x": {
+            "value": "{dimension.96}",
+            "type": "spacing"
+        },
+        "60x": {
+            "value": "{dimension.120}",
+            "type": "spacing"
+        },
+        "80x": {
+            "value": "{dimension.160}",
+            "type": "spacing"
+        }
+    },
+    "icon-size": {
+        "small": {
+            "value": "{dimension.12}",
+            "type": "dimension",
+            "description": "12px (default)"
+        },
+        "regular": {
+            "value": "{dimension.16}",
+            "type": "dimension",
+            "description": "16px (default)"
+        },
+        "large": {
+            "value": "{dimension.24}",
+            "type": "dimension",
+            "description": "24px (default)"
+        }
+    },
+    "color": {
+        "background": {
+            "brand": {
+                "primary": {
+                    "value": "{color.primary.600}",
+                    "type": "color",
+                    "description": "Primary base color"
+                },
+                "secondary": {
+                    "value": "{color.secondary.500}",
+                    "type": "color",
+                    "description": "Secondary base color"
+                },
+                "tertiary": {
+                    "value": "{color.tertiary.600}",
+                    "type": "color",
+                    "description": "Tertirary base color\n"
+                },
+                "quaternary": {
+                    "value": "{color.quaternary.300}",
+                    "type": "color",
+                    "description": "Quarternary base color"
+                }
+            },
+            "neutral": {
+                "inverse": {
+                    "base": {
+                        "value": "{color.base.alpha.900}",
+                        "type": "color"
+                    }
+                },
+                "dim": {
+                    "value": "{color.background.neutral.base}",
+                    "type": "color",
+                    "$extensions": {
+                        "studio.tokens": {
+                            "modify": {
+                                "type": "darken",
+                                "value": "{luminosity.darker}",
+                                "space": "srgb"
+                            }
+                        }
+                    }
+                },
+                "base": {
+                    "value": "{color.base.light-beige.500}",
+                    "type": "color"
+                },
+                "bright": {
+                    "value": "{color.background.neutral.base}",
+                    "type": "color",
+                    "$extensions": {
+                        "studio.tokens": {
+                            "modify": {
+                                "type": "lighten",
+                                "value": "{luminosity.lighter}",
+                                "space": "srgb"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "foreground": {
+            "brand": {
+                "primary": {
+                    "on-background": {
+                        "value": "{color.base.alpha.50}",
+                        "type": "color",
+                        "description": "On-primary is applied to content (icons, text, etc.) that sits on top of primary\n"
+                    },
+                    "on-surface": {
+                        "value": "{color.primary.700}",
+                        "type": "color",
+                        "description": "On-primary container is applied to content (icons, text, etc.) that sits on top of primary container"
+                    }
+                },
+                "secondary": {
+                    "on-background": {
+                        "value": "{color.base.off-black.500}",
+                        "type": "color",
+                        "description": "On-secondary is applied to content (icons, text, etc.) that sits on top of secondary"
+                    },
+                    "on-surface": {
+                        "value": "{color.secondary.700}",
+                        "type": "color",
+                        "description": "On-secondary container is applied to content (icons, text, etc.) that sits on top of secondary container"
+                    }
+                },
+                "tertiary": {
+                    "on-background": {
+                        "value": "{color.base.off-black.500}",
+                        "type": "color",
+                        "description": "On-tertiary is applied to content (icons, text, etc.) that sits on top of tertiary"
+                    },
+                    "on-surface": {
+                        "value": "{color.tertiary.800}",
+                        "type": "color",
+                        "description": "On-tertiary container is applied to content (icons, text, etc.) that sits on top of tertiary container"
+                    }
+                },
+                "quaternary": {
+                    "on-background": {
+                        "value": "{color.base.off-black.500}",
+                        "type": "color",
+                        "description": "On-quaternary is applied to content (icons, text, etc.) that sits on top of quaternary"
+                    },
+                    "on-surface": {
+                        "value": "{color.quaternary.800}",
+                        "type": "color",
+                        "description": "On-quaternary container is applied to content (icons, text, etc.) that sits on top of quaternary container"
+                    }
+                }
+            },
+            "accent": {
+                "enabled": {
+                    "value": "{color.background.brand.primary}",
+                    "type": "color"
+                },
+                "pressed": {
+                    "value": "{color.primary.700}",
+                    "type": "color"
+                },
+                "disabled": {
+                    "value": "{color.background.brand.primary}",
+                    "type": "color",
+                    "$extensions": {
+                        "studio.tokens": {
+                            "modify": {
+                                "type": "alpha",
+                                "value": "{opacity.state.disabled}",
+                                "space": "lch"
+                            }
+                        }
+                    }
+                }
+            },
+            "content": {
+                "enabled": {
+                    "value": "{color.base.off-black.500}",
+                    "type": "color",
+                    "description": "For primary text, such as headings, subheadings, body text, and on colored backgrounds."
+                },
+                "pressed": {
+                    "value": "{color.base.alpha.700}",
+                    "type": "color",
+                    "description": "For primary text, such as headings, subheadings, body text, and on colored backgrounds.",
+                    "$extensions": {}
+                },
+                "filled": {
+                    "value": "{color.base.alpha.900}",
+                    "type": "color",
+                    "description": "For primary text, such as headings, subheadings, body text, and on colored backgrounds."
+                },
+                "disabled": {
+                    "value": "{color.base.alpha.600}",
+                    "type": "color",
+                    "description": "For primary text, such as headings, subheadings, body text, and on colored backgrounds.",
+                    "$extensions": {}
+                },
+                "subtle": {
+                    "enabled": {
+                        "value": "{color.base.alpha.600}",
+                        "type": "color",
+                        "description": "For secondary text, such as navigation, input field labels, and all caps subheadings."
+                    },
+                    "pressed": {
+                        "value": "{color.base.alpha.800}",
+                        "type": "color",
+                        "description": "For secondary text, such as navigation, input field labels, and all caps subheadings.",
+                        "$extensions": {}
+                    },
+                    "disabled": {
+                        "value": "{color.base.alpha.400}",
+                        "type": "color",
+                        "description": "For secondary text, such as navigation, input field labels, and all caps subheadings.",
+                        "$extensions": {}
+                    },
+                    "inverse": {
+                        "enabled": {
+                            "value": "{color.base.alpha.200}",
+                            "type": "color",
+                            "description": "For secondary text, such as navigation, input field labels, and all caps subheadings."
+                        },
+                        "pressed": {
+                            "value": "{color.base.alpha.400}",
+                            "type": "color",
+                            "description": "For secondary text, such as navigation, input field labels, and all caps subheadings.",
+                            "$extensions": {}
+                        },
+                        "disabled": {
+                            "value": "{color.base.alpha.600}",
+                            "type": "color",
+                            "description": "For secondary text, such as navigation, input field labels, and all caps subheadings.",
+                            "$extensions": {}
+                        }
+                    }
+                },
+                "subtlest": {
+                    "enabled": {
+                        "value": "{color.base.alpha.600}",
+                        "type": "color",
+                        "description": "For secondary text, such as navigation, input field labels, and all caps subheadings."
+                    },
+                    "pressed": {
+                        "value": "{color.foreground.content.subtle.enabled}",
+                        "type": "color",
+                        "description": "For secondary text, such as navigation, input field labels, and all caps subheadings.",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "darken",
+                                    "value": "{opacity.state.pressed}",
+                                    "space": "srgb"
+                                }
+                            }
+                        }
+                    },
+                    "disabled": {
+                        "value": "{color.foreground.content.subtle.enabled}",
+                        "type": "color",
+                        "description": "For secondary text, such as navigation, input field labels, and all caps subheadings.",
+                        "$extensions": {
+                            "studio.tokens": {
+                                "modify": {
+                                    "type": "lighten",
+                                    "value": "{opacity.state.disabled}",
+                                    "space": "srgb"
+                                }
+                            }
+                        }
+                    }
+                },
+                "inverse": {
+                    "enabled": {
+                        "value": "{color.base.alpha.50}",
+                        "type": "color"
+                    },
+                    "pressed": {
+                        "value": "{color.base.alpha.200}",
+                        "type": "color",
+                        "$extensions": {}
+                    },
+                    "filled": {
+                        "value": "{color.base.alpha.50}",
+                        "type": "color"
+                    },
+                    "disabled": {
+                        "value": "{color.base.alpha.400}",
+                        "type": "color",
+                        "$extensions": {}
+                    }
+                }
+            },
+            "border": {
+                "dim": {
+                    "value": "{color.base.alpha.900}",
+                    "type": "color"
+                },
+                "neutral": {
+                    "value": "{color.base.alpha.800}",
+                    "type": "color"
+                },
+                "bright": {
+                    "value": "{color.base.alpha.500}",
+                    "type": "color"
+                },
+                "brighter": {
+                    "value": "{color.base.alpha.300}",
+                    "type": "color"
+                }
+            },
+            "icon": {
+                "enabled": {
+                    "value": "{color.base.alpha.600}",
+                    "type": "color"
+                },
+                "pressed": {
+                    "value": "{color.base.alpha.700}",
+                    "type": "color",
+                    "$extensions": {}
+                },
+                "disabled": {
+                    "value": "{color.base.alpha.400}",
+                    "type": "color",
+                    "$extensions": {}
+                },
+                "inverse": {
+                    "enabled": {
+                        "value": "{color.base.alpha.50}",
+                        "type": "color",
+                        "description": "For primary text, such as headings, subheadings, body text, and on colored backgrounds."
+                    }
+                }
+            }
+        },
+        "surface": {
+            "neutral": {
+                "dim": {
+                    "value": "{color.base.alpha.200}",
+                    "type": "color",
+                    "$extensions": {}
+                },
+                "base": {
+                    "value": "{color.base.alpha.100}",
+                    "type": "color"
+                },
+                "bright": {
+                    "value": "{color.surface.neutral.base}",
+                    "type": "color",
+                    "$extensions": {
+                        "studio.tokens": {
+                            "modify": {
+                                "type": "lighten",
+                                "value": "{luminosity.lighter}",
+                                "space": "srgb"
+                            }
+                        }
+                    }
+                }
+            },
+            "brand": {
+                "primary": {
+                    "value": "{color.primary.100}",
+                    "type": "color",
+                    "description": "Primary container is applied to elements needing less emphasis than primary"
+                },
+                "secondary": {
+                    "value": "{color.secondary.100}",
+                    "type": "color",
+                    "description": "Secondary container is applied to elements needing less emphasis than secondary"
+                },
+                "tertiary": {
+                    "value": "{color.tertiary.200}",
+                    "type": "color",
+                    "description": "Tertiary container is applied to elements needing less emphasis than tertiary"
+                },
+                "quaternary": {
+                    "value": "{color.quaternary.100}",
+                    "type": "color",
+                    "description": "Quaternary container is applied to elements needing less emphasis than quaternary\n"
+                }
+            }
+        },
+        "divider": {
+            "dim": {
+                "value": "{color.base.alpha.400}",
+                "type": "color",
+                "$extensions": {}
+            },
+            "base": {
+                "value": "{color.base.alpha.300}",
+                "type": "color",
+                "$extensions": {}
+            },
+            "bright": {
+                "value": "{color.base.alpha.200}",
+                "type": "color",
+                "$extensions": {}
+            },
+            "inverse": {
+                "dim": {
+                    "value": "{color.base.alpha.700}",
+                    "type": "color",
+                    "$extensions": {}
+                },
+                "base": {
+                    "value": "{color.base.alpha.600}",
+                    "type": "color",
+                    "$extensions": {}
+                },
+                "bright": {
+                    "value": "{color.base.alpha.500}",
+                    "type": "color",
+                    "$extensions": {}
+                }
+            }
+        },
+        "status": {
+            "positive": {
+                "base": {
+                    "value": "{color.base.green.500}",
+                    "type": "color",
+                    "description": "Positive base color\n"
+                },
+                "on-base": {
+                    "value": "{color.base.off-black.500}",
+                    "type": "color",
+                    "description": "On-positive is applied to content (icons, text, etc.) that sits on top of positive"
+                },
+                "container": {
+                    "value": "{color.base.green.50}",
+                    "type": "color",
+                    "description": "Positive container is applied to elements needing less emphasis than positive\n"
+                },
+                "on-container": {
+                    "value": "{color.base.green.800}",
+                    "type": "color",
+                    "description": "On-positive container is applied to content (icons, text, etc.) that sits on top of positive container"
+                }
+            },
+            "warning": {
+                "base": {
+                    "value": "{color.base.orange.500}",
+                    "type": "color"
+                },
+                "on-base": {
+                    "value": "{color.base.alpha.50}",
+                    "type": "color",
+                    "description": "On-warning is applied to content (icons, text, etc.) that sits on top of warning\n"
+                },
+                "container": {
+                    "value": "{color.base.orange.50}",
+                    "type": "color",
+                    "description": "Warning container is applied to elements needing less emphasis than warning\n\n"
+                },
+                "on-container": {
+                    "value": "{color.base.orange.800}",
+                    "type": "color",
+                    "description": "On-warning container is applied to content (icons, text, etc.) that sits on top of warning container"
+                }
+            },
+            "danger": {
+                "base": {
+                    "value": "{color.base.red.700}",
+                    "type": "color"
+                },
+                "on-base": {
+                    "value": "{color.base.alpha.50}",
+                    "type": "color",
+                    "description": "On-danger is applied to content (icons, text, etc.) that sits on top of danger"
+                },
+                "container": {
+                    "value": "{color.base.red.50}",
+                    "type": "color",
+                    "description": "Danger container is applied to elements needing less emphasis than danger\n"
+                },
+                "on-container": {
+                    "value": "{color.base.red.800}",
+                    "type": "color",
+                    "description": "On-danger container is applied to content (icons, text, etc.) that sits on top of danger container"
+                }
+            },
+            "info": {
+                "base": {
+                    "value": "{color.base.blue.500}",
+                    "type": "color",
+                    "description": "Info base color\n"
+                },
+                "on-base": {
+                    "value": "{color.base.alpha.50}",
+                    "type": "color",
+                    "description": "On-info is applied to content (icons, text, etc.) that sits on top of info\n"
+                },
+                "container": {
+                    "value": "{color.base.blue.50}",
+                    "type": "color",
+                    "description": "Info container is applied to elements needing less emphasis than info\n"
+                },
+                "on-container": {
+                    "value": "{color.base.blue.800}",
+                    "type": "color",
+                    "description": "On-info container is applied to content (icons, text, etc.) that sits on top of info container"
+                }
+            }
+        },
+        "misc": {
+            "none": {
+                "value": "{color.base.alpha.50}",
+                "type": "color",
+                "$extensions": {
+                    "studio.tokens": {
+                        "modify": {
+                            "type": "alpha",
+                            "value": "0",
+                            "space": "srgb"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "opacity": {
+        "state": {
+            "enabled": {
+                "value": "{opacity.total}",
+                "type": "opacity"
+            },
+            "disabled": {
+                "value": "{opacity.intense}",
+                "type": "opacity"
+            },
+            "pressed": {
+                "value": "{opacity.medium}",
+                "type": "opacity"
+            }
+        },
+        "variation": {
+            "dim": {
+                "value": "{opacity.medium}",
+                "type": "opacity"
+            },
+            "neutral": {
+                "value": "{opacity.total}",
+                "type": "opacity"
+            },
+            "bright": {
+                "value": "{opacity.semiopaque}",
+                "type": "opacity"
+            }
+        },
+        "disabled": {
+            "value": "0.50",
+            "type": "number"
+        }
+    }
+}
